@@ -1,0 +1,56 @@
+{
+  "name": "react-tutorial-game-of-life",
+  "version": "1.0.0",
+  "description": "react tutorial",
+  "author": "benjamin-gill",
+  "license": "ISC",
+  "main": "index.js",
+  "config": {
+    "presets": [
+      "neutrino-preset-airbnb-base",
+      "neutrino-preset-react"
+    ],
+    "neutrino": {
+      "module": {
+        "rule": {
+          "lint": {
+            "loader": {
+              "eslint": {
+                "options": {
+                  "rules": {
+                    "linebreak-style": "off",
+                    "import/no-unresolved": "off",
+                    "no-console": "off"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminGill/react-tutorial-game-of-life.git"
+  },
+  "devDependencies": {
+    "neutrino": "^4.3.1",
+    "neutrino-preset-airbnb-base": "^4.3.1",
+    "neutrino-preset-react": "^4.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  }
+}

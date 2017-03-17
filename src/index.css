@@ -1,0 +1,42 @@
+.board {
+  margin: 4px;
+}
+
+.board-renderer {
+  margin: 8px;
+}
+
+.cell {
+  width: 32px;
+  height: 32px;
+}
+
+.cell.alive {
+  background-color: black;
+  border: 1px solid white;
+  margin: 1px;
+}
+
+.cell.dead {
+  background-color: white;
+  border: 1px solid black;
+  margin: 1px;
+}
+
+.board-control {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.board-control-group {
+  padding: 8px;
+}
+
+.board-renderer {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.input-group {
+  margin: 2px;
+}
