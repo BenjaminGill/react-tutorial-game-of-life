@@ -1,5 +1,5 @@
-/* eslint no-console: 0 */
 const createBoard = (w, h, board, func) => {
+  if (!w || !h) { return []; }
   const array = new Array(w);
   for (let i = 0; i < w; i += 1) {
     array[i] = new Array(h);
@@ -45,4 +45,3 @@ exports.toggleCell = (board, x, y) => {
   newtiles[x][y] = !newtiles[x][y];
   return newtiles;
 };
-

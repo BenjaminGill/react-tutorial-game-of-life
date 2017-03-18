@@ -39,6 +39,8 @@
     "url": "git+https://github.com/BenjaminGill/react-tutorial-game-of-life.git"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-s3": "^0.11.0",
     "neutrino": "^4.3.1",
     "neutrino-preset-airbnb-base": "^4.3.1",
     "neutrino-preset-react": "^4.2.3"
