@@ -9,26 +9,29 @@
 .cell {
   width: 32px;
   height: 32px;
+  border: 1px solid darkgray;
+  margin: 1px;
+}
+
+.cell:hover {
+  border-color: black;
 }
 
 .cell.alive {
   background-color: darkgray;
-  border: 1px solid black;
-  margin: 1px;
-}
-
-.cell.alive:hover {
-  border: 2px solid black;
 }
 
 .cell.dead {
   background-color: white;
-  border: 1px solid black;
-  margin: 1px;
 }
 
-.cell.dead:hover {
-  border: 2px solid black;
+.cell.alive:hover, .cell.dead:hover {
+  background-color: cornflowerblue;
+}
+
+.centered {
+  margin: 0 auto;
+  width: 50%;
 }
 
 .board-control {
