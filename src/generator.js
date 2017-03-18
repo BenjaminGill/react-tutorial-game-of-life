@@ -39,3 +39,10 @@ const getNextState = (x, y, board) => {
 };
 
 exports.step = board => createBoard(board.length, board[0].length, board, getNextState);
+
+exports.toggleCell = (board, x, y) => {
+  const newtiles = board.slice(0);
+  newtiles[x][y] = !newtiles[x][y];
+  return newtiles;
+};
+

@@ -27,6 +27,10 @@ const board = (state = initialState, action = {}) => {
       return Object.assign({}, state, {
         tiles: boardFunctions.randomize(state.width, state.height),
       });
+    case 'TOGGLE_CELL':
+      return Object.assign({}, state, {
+        tiles: boardFunctions.toggleCell(state.tiles, action.x, action.y),
+      });
     case 'STEP_BOARD_FORWARD':
       return Object.assign({}, state, {
         tiles: boardFunctions.step(state.tiles),
