@@ -1,3 +1,4 @@
 build/
 node_modules/
+awsconfig.json
 npm-debug.log
