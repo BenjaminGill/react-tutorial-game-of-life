@@ -12,15 +12,23 @@
 }
 
 .cell.alive {
-  background-color: black;
-  border: 1px solid white;
+  background-color: darkgray;
+  border: 1px solid black;
   margin: 1px;
+}
+
+.cell.alive:hover {
+  border: 2px solid black;
 }
 
 .cell.dead {
   background-color: white;
   border: 1px solid black;
   margin: 1px;
+}
+
+.cell.dead:hover {
+  border: 2px solid black;
 }
 
 .board-control {
